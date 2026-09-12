@@ -14,7 +14,7 @@ struct segtree {
     static node combine(const node &a, const node &b){}
     void apply(tag t){
       if (!t.has) return;
-      // apply tag too custom stuff
+      // apply tag to custom stuff
       lazy = t; // remember to upd lazy tag
     }
     void push(node &left, node &right){
